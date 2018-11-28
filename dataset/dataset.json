@@ -1,0 +1,1035 @@
+[
+    ["A flaw was found in the Linux kernel's ext4 filesystem. A local user can cause an out-of-bounds write and a denial of service or unspecified other impact is possible by mounting and operating a crafted ext4 filesystem image.\r\n", {
+        "entities": [
+            [39, 54, "DRIVER"],
+            [82, 95, "VULNERABILITY"],
+            [108, 125, "CAPABILITY"],
+            [129, 153, "CAPABILITY"]
+        ]
+    }],
+    ["Linux kernel ext4 filesystem is vulnerable to an out-of-bound access in the ext4_ext_drop_refs() function when operating on a crafted ext4 filesystem image.\r\n", {
+        "entities": [
+            [76, 94, "FUNCTION"],
+            [13, 28, "DRIVER"],
+            [49, 61, "VULNERABILITY"]
+        ]
+    }],
+    ["A flaw was found in Linux kernel in the ext4 filesystem code. A use-after-free is possible in ext4_ext_remove_space() function when mounting and operating a crafted ext4 image.\r\n", {
+        "entities": [
+            [94, 115, "FUNCTION"],
+            [40, 55, "DRIVER"],
+            [64, 78, "VULNERABILITY"]
+        ]
+    }],
+    ["A flaw was found in the way Linux kernel KVM hypervisor before 4.18 emulated instructions such as sgdt/sidt/fxsave/fxrstor. It did not check current privilege(CPL) level while emulating unprivileged instructions. An unprivileged guest user/process could use this flaw to potentially escalate privileges inside guest.\r\n", {
+        "entities": [
+            [63, 67, "VERSION"],
+            [98, 122, "SOURCECODE"],
+            [41, 55, "DRIVER"],
+            [127, 158, "VULNERABILITY"],
+            [283, 302, "CAPABILITY"]
+        ]
+    }],
+    ["Linux kernel is vulnerable to a heap-based buffer overflow in the fs/ext4/xattr.c:ext4_xattr_set_entry() function. An attacker could exploit this by operating on a mounted crafted ext4 image.\r\n", {
+        "entities": [
+            [83, 102, "FUNCTION"],
+            [66, 81, "SOURCECODE"],
+            [32, 58, "VULNERABILITY"]
+        ]
+    }],
+    ["The do_get_mempolicy function in mm/mempolicy.c in the Linux kernel before 4.12.9 allows local users to cause a denial of service (use-after-free) or possibly have unspecified other impact via crafted system calls.\r\n", {
+        "entities": [
+            [4, 20, "FUNCTION"],
+            [75, 81, "VERSION"],
+            [33, 47, "SOURCECODE"],
+            [112, 129, "CAPABILITY"],
+            [159, 188, "CAPABILITY"],
+            [131, 145, "VULNERABILITY"]
+        ]
+    }],
+    ["The xfs_bmap_extents_to_btree function in fs/xfs/libxfs/xfs_bmap.c in the Linux kernel through 4.16.3 allows local users to cause a denial of service (xfs_bmapi_write NULL pointer dereference) via a crafted xfs image.\r\n", {
+        "entities": [
+            [4, 29, "FUNCTION"],
+            [151, 166, "FUNCTION"],
+            [95, 101, "VERSION"],
+            [42, 66, "SOURCECODE"],
+            [167, 191, "VULNERABILITY"],
+            [132, 149, "CAPABILITY"]
+        ]
+    }],
+    ["The xfs_dinode_verify function in fs/xfs/libxfs/xfs_inode_buf.c in the Linux kernel through 4.16.3 allows local users to cause a denial of service (xfs_ilock_attr_map_shared invalid pointer dereference) via a crafted xfs image.\r\n", {
+        "entities": [
+            [4, 21, "FUNCTION"],
+            [148, 173, "FUNCTION"],
+            [92, 98, "VERSION"],
+            [34, 63, "SOURCECODE"],
+            [174, 201, "VULNERABILITY"],
+            [129, 146, "CAPABILITY"]
+        ]
+    }],
+    ["The kill_something_info function in kernel/signal.c in the Linux kernel before 4.13, when an unspecified architecture and compiler is used, might allow local users to cause a denial of service via an INT_MIN argument.\r\n", {
+        "entities": [
+            [4, 23, "FUNCTION"],
+            [200, 207, "STRUCT"],
+            [79, 83, "VERSION"],
+            [36, 51, "SOURCECODE"],
+            [175, 192, "CAPABILITY"]
+        ]
+    }],
+    ["The kernel_wait4 function in kernel/exit.c in the Linux kernel before 4.13, when an unspecified architecture and compiler is used, might allow local users to cause a denial of service by triggering an attempted use of the -INT_MIN value.\r\n", {
+        "entities": [
+            [4, 16, "FUNCTION"],
+            [223, 230, "STRUCT"],
+            [70, 74, "VERSION"],
+            [29, 42, "SOURCECODE"],
+            [166, 183, "CAPABILITY"]
+        ]
+    }],
+    ["The hi3660_stub_clk_probe function in drivers/clk/hisilicon/clk-hi3660-stub.c in the Linux kernel before 4.16 allows local users to cause a denial of service (NULL pointer dereference) by triggering a failure of resource retrieval.\r\n", {
+        "entities": [
+            [4, 25, "FUNCTION"],
+            [105, 109, "VERSION"],
+            [26, 77, "SOURCECODE"],
+            [159, 183, "VULNERABILITY"],
+            [140, 157, "CAPABILITY"]
+        ]
+    }],
+    ["drivers/scsi/libsas/sas_scsi_host.c in the Linux kernel before 4.16 allows local users to cause a denial of service (ata qc leak) by triggering certain failure conditions. NOTE: a third party disputes the relevance of this report because the failure can only occur for physically proximate attackers who unplug SAS Host Bus Adapter cables.\r\n", {
+        "entities": [
+            [63, 67, "VERSION"],
+            [0, 35, "SOURCECODE"],
+            [98, 115, "CAPABILITY"],
+            [117, 128, "VULNERABILITY"]
+        ]
+    }],
+    ["Incorrect buffer length handling in the ncp_read_kernel function in fs/ncpfs/ncplib_kernel.c in the Linux kernel through 4.15.11, and in drivers/staging/ncpfs/ncplib_kernel.c in the Linux kernel 4.16-rc through 4.16-rc6, could be exploited by malicious NCPFS servers to crash the kernel or execute code.\r\n", {
+        "entities": [
+            [40, 55, "FUNCTION"],
+            [121, 128, "VERSION"],
+            [195, 202, "VERSION"],
+            [211, 219, "VERSION"],
+            [68, 92, "SOURCECODE"],
+            [137, 174, "SOURCECODE"],
+            [68, 89, "DRIVER"],
+            [0, 32, "VULNERABILITY"],
+            [270, 286, "CAPABILITY"],
+            [290, 302, "CAPABILITY"]
+        ]
+    }],
+    ["The udl_fb_mmap function in drivers/gpu/drm/udl/udl_fb.c at the Linux kernel version 3.4 and up to and including 4.15 has an integer-overflow vulnerability allowing local users with access to the udldrmfb driver to obtain full read and write permissions on kernel physical pages, resulting in a code execution in kernel space.\r\n", {
+        "entities": [
+            [4, 15, "FUNCTION"],
+            [85, 88, "VERSION"],
+            [113, 117, "VERSION"],
+            [28, 56, "SOURCECODE"],
+            [192, 205, "DRIVER"],
+            [125, 141, "VULNERABILITY"],
+            [227, 278, "CAPABILITY"]
+        ]
+    }],
+    ["Memory leak in the hwsim_new_radio_nl function in drivers/net/wireless/mac80211_hwsim.c in the Linux kernel through 4.15.9 allows local users to cause a denial of service (memory consumption) by triggering an out-of-array error case.\r\n", {
+        "entities": [
+            [19, 37, "FUNCTION"],
+            [116, 122, "VERSION"],
+            [50, 87, "SOURCECODE"],
+            [0, 11, "VULNERABILITY"],
+            [172, 190, "VULNERABILITY"],
+            [153, 170, "CAPABILITY"]
+        ]
+    }],
+    ["The unimac_mdio_probe function in drivers/net/phy/mdio-bcm-unimac.c in the Linux kernel through 4.15.8 does not validate certain resource availability, which allows local users to cause a denial of service (NULL pointer dereference).\r\n", {
+        "entities": [
+            [4, 21, "FUNCTION"],
+            [96, 102, "VERSION"],
+            [34, 67, "SOURCECODE"],
+            [103, 137, "VULNERABILITY"],
+            [207, 231, "VULNERABILITY"],
+            [188, 205, "CAPABILITY"]
+        ]
+    }],
+    ["Race condition in the store_int_with_restart() function in arch/x86/kernel/cpu/mcheck/mce.c in the Linux kernel through 4.15.7 allows local users to cause a denial of service (panic) by leveraging root access to write to the check_interval file in a /sys/devices/system/machinecheck/machinecheck<cpu number> directory. NOTE: a third party has indicated that this report is not security relevant.\r\n", {
+        "entities": [
+            [22, 44, "FUNCTION"],
+            [225, 239, "STRUCT"],
+            [120, 126, "VERSION"],
+            [59, 91, "SOURCECODE"],
+            [250, 295, "DRIVER"],
+            [0, 14, "VULNERABILITY"],
+            [157, 174, "CAPABILITY"],
+            [176, 181, "CAPABILITY"]
+        ]
+    }],
+    ["Memory leak in the sas_smp_get_phy_events function in drivers/scsi/libsas/sas_expander.c in the Linux kernel through 4.15.7 allows local users to cause a denial of service (memory consumption) via many read accesses to files in the /sys/class/sas_phy directory, as demonstrated by the /sys/class/sas_phy/phy-1:0:12/invalid_dword_count file.\r\n", {
+        "entities": [
+            [19, 41, "FUNCTION"],
+            [74, 86, "FUNCTION"],
+            [315, 334, "FUNCTION"],
+            [117, 123, "VERSION"],
+            [54, 88, "SOURCECODE"],
+            [232, 250, "DRIVER"],
+            [285, 334, "DRIVER"],
+            [0, 11, "VULNERABILITY"],
+            [173, 191, "VULNERABILITY"],
+            [154, 171, "CAPABILITY"]
+        ]
+    }],
+    ["An issue was discovered in the fd_locked_ioctl function in drivers/block/floppy.c in the Linux kernel through 4.15.7. The floppy driver will copy a kernel pointer to user memory in response to the FDGETPRM ioctl. An attacker can send the FDGETPRM ioctl and use the obtained kernel pointer to discover the location of kernel code and data and bypass kernel security protections such as KASLR.\r\n", {
+        "entities": [
+            [31, 46, "FUNCTION"],
+            [110, 116, "VERSION"],
+            [59, 81, "SOURCECODE"],
+            [118, 129, "DRIVER"],
+            [342, 376, "CAPABILITY"]
+        ]
+    }],
+    ["The aoedisk_debugfs_show function in drivers/block/aoe/aoeblk.c in the Linux kernel through 4.16.4rc4 allows local users to obtain sensitive address information by reading \"ffree: \" lines in a debugfs file.\r\n", {
+        "entities": [
+            [4, 24, "FUNCTION"],
+            [92, 101, "VERSION"],
+            [37, 63, "SOURCECODE"],
+            [124, 160, "CAPABILITY"]
+        ]
+    }],
+    ["The resv_map_release function in mm/hugetlb.c in the Linux kernel through 4.15.7 allows local users to cause a denial of service (BUG) via a crafted application that makes mmap system calls and has a large pgoff argument to the remap_file_pages system call.\r\n", {
+        "entities": [
+            [4, 20, "FUNCTION"],
+            [228, 244, "FUNCTION"],
+            [74, 80, "VERSION"],
+            [33, 45, "SOURCECODE"],
+            [172, 176, "VULNERABILITY"],
+            [111, 128, "CAPABILITY"]
+        ]
+    }],
+    ["The Linux kernel 4.15 has a Buffer Overflow via an SNDRV_SEQ_IOCTL_SET_CLIENT_POOL ioctl write operation to /dev/snd/seq by a local user.\r\n", {
+        "entities": [
+            [51, 82, "FUNCTION"],
+            [17, 21, "VERSION"],
+            [108, 120, "DRIVER"],
+            [28, 43, "VULNERABILITY"]
+        ]
+    }],
+    ["A NULL pointer dereference was found in the net/rds/rdma.c __rds_rdma_map() function in the Linux kernel before 4.14.7 allowing local attackers to cause a system panic and a denial-of-service, related to RDS_GET_MR and RDS_GET_MR_FOR_DEST.\r\n", {
+        "entities": [
+            [61, 73, "FUNCTION"],
+            [204, 214, "STRUCT"],
+            [219, 238, "STRUCT"],
+            [112, 118, "VERSION"],
+            [44, 58, "SOURCECODE"],
+            [2, 26, "VULNERABILITY"],
+            [155, 167, "CAPABILITY"],
+            [174, 191, "CAPABILITY"]
+        ]
+    }],
+    ["The blkcg_init_queue function in block/blk-cgroup.c in the Linux kernel before 4.11 allows local users to cause a denial of service (double free) or possibly have unspecified other impact by triggering a creation failure.\r\n", {
+        "entities": [
+            [4, 20, "FUNCTION"],
+            [79, 83, "VERSION"],
+            [33, 51, "DRIVER"],
+            [133, 144, "VULNERABILITY"],
+            [114, 131, "CAPABILITY"],
+            [158, 187, "CAPABILITY"]
+        ]
+    }],
+    ["In the Linux kernel through 4.15.4, the floppy driver reveals the addresses of kernel functions and global variables using printk calls within the function show_floppy in drivers/block/floppy.c. An attacker can read this information from dmesg and use the addresses to find the locations of kernel code and data and bypass kernel security protections such as KASLR.\r\n", {
+        "entities": [
+            [156, 167, "FUNCTION"],
+            [28, 34, "VERSION"],
+            [171, 193, "SOURCECODE"],
+            [36, 47, "DRIVER"],
+            [54, 75, "VULNERABILITY"],
+            [316, 350, "CAPABILITY"]
+        ]
+    }],
+    ["The futex_requeue function in kernel/futex.c in the Linux kernel before 4.14.15 might allow attackers to cause a denial of service (integer overflow) or possibly have unspecified other impact by triggering a negative wake or requeue value.\r\n", {
+        "entities": [
+            [4, 17, "FUNCTION"],
+            [72, 79, "VERSION"],
+            [30, 44, "SOURCECODE"],
+            [132, 148, "VULNERABILITY"],
+            [113, 130, "CAPABILITY"],
+            [162, 191, "CAPABILITY"]
+        ]
+    }],
+    ["The irda_setsockopt function in net/irda/af_irda.c and later in drivers/staging/irda/net/af_irda.c in the Linux kernel before 4.17 allows local users to cause a denial of service (ias_object use-after-free and system crash) or possibly have unspecified other impact via an AF_IRDA socket.\r\n", {
+        "entities": [
+            [4, 19, "FUNCTION"],
+            [180, 190, "STRUCT"],
+            [273, 280, "FUNCTION"],
+            [126, 130, "VERSION"],
+            [32, 50, "SOURCECODE"],
+            [64, 98, "SOURCECODE"],
+            [191, 205, "VULNERABILITY"],
+            [161, 178, "CAPABILITY"],
+            [210, 222, "CAPABILITY"],
+            [236, 265, "CAPABILITY"]
+        ]
+    }],
+    ["Memory leak in the irda_bind function in net/irda/af_irda.c and later in drivers/staging/irda/net/af_irda.c in the Linux kernel before 4.17 allows local users to cause a denial of service (memory consumption) by repeatedly binding an AF_IRDA socket.\r\n", {
+        "entities": [
+            [19, 28, "FUNCTION"],
+            [98, 105, "FUNCTION"],
+            [234, 241, "STRUCT"],
+            [135, 139, "VERSION"],
+            [41, 59, "SOURCECODE"],
+            [73, 107, "SOURCECODE"],
+            [0, 11, "VULNERABILITY"],
+            [189, 207, "VULNERABILITY"],
+            [170, 187, "CAPABILITY"]
+        ]
+    }],
+    ["In the function sbusfb_ioctl_helper() in drivers/video/fbdev/sbuslib.c in the Linux kernel through 4.15, an integer signedness error allows arbitrary information leakage for the FBIOPUTCMAP_SPARC and FBIOGETCMAP_SPARC commands.\r\n", {
+        "entities": [
+            [16, 35, "FUNCTION"],
+            [178, 195, "STRUCT"],
+            [200, 217, "STRUCT"],
+            [99, 103, "VERSION"],
+            [41, 70, "SOURCECODE"],
+            [108, 126, "VULNERABILITY"],
+            [150, 169, "CAPABILITY"]
+        ]
+    }],
+    ["The pcpu_embed_first_chunk function in mm/percpu.c in the Linux kernel through 4.14.14 allows local users to obtain sensitive address information by reading dmesg data from a \"pages/cpu\" printk call.\r\n", {
+        "entities": [
+            [4, 26, "FUNCTION"],
+            [79, 86, "VERSION"],
+            [39, 50, "SOURCECODE"],
+            [176, 185, "DRIVER"],
+            [109, 133, "CAPABILITY"]
+        ]
+    }],
+    ["The swiotlb_print_info function in lib/swiotlb.c in the Linux kernel through 4.14.14 allows local users to obtain sensitive address information by reading dmesg data from a \"software IO TLB\" printk call.\r\n", {
+        "entities": [
+            [4, 22, "FUNCTION"],
+            [77, 84, "VERSION"],
+            [35, 48, "SOURCECODE"],
+            [107, 131, "CAPABILITY"]
+        ]
+    }],
+    ["An issue was discovered in the __ns_get_path function in fs/nsfs.c in the Linux kernel before 4.11. Due to a race condition when accessing files, a Use After Free condition can occur. This also affects all Android releases from CAF using the Linux kernel (Android for MSM, Firefox OS for MSM, QRD Android) before security patch level 2018-07-05.\r\n", {
+        "entities": [
+            [33, 44, "FUNCTION"],
+            [94, 98, "VERSION"],
+            [57, 66, "SOURCECODE"],
+            [109, 123, "VULNERABILITY"],
+            [148, 162, "VULNERABILITY"]
+        ]
+    }],
+    ["In the Linux Kernel before version 4.16.11, 4.14.43, 4.9.102, and 4.4.133, multiple race condition errors when handling probe, disconnect, and rebind operations can be exploited to trigger a use-after-free condition or a NULL pointer dereference by sending multiple USB over IP packets.\r\n", {
+        "entities": [
+            [35, 42, "VERSION"],
+            [44, 51, "VERSION"],
+            [53, 60, "VERSION"],
+            [66, 73, "VERSION"],
+            [84, 98, "VULNERABILITY"],
+            [120, 125, "FUNCTION"],
+            [127, 137, "FUNCTION"],
+            [143, 149, "FUNCTION"],
+            [191, 205, "VULNERABILITY"],
+            [221, 245, "VULNERABILITY"]
+        ]
+    }],
+    ["In the Linux Kernel before version 4.15.8, 4.14.25, 4.9.87, 4.4.121, 4.1.51, and 3.2.102, an error in the \"_sctp_make_chunk()\" function (net/sctp/sm_make_chunk.c) when handling SCTP packets length can be exploited to cause a kernel crash.\r\n", {
+        "entities": [
+            [108, 123, "FUNCTION"],
+            [35, 41, "VERSION"],
+            [43, 50, "VERSION"],
+            [52, 58, "VERSION"],
+            [60, 67, "VERSION"],
+            [69, 75, "VERSION"],
+            [81, 88, "VERSION"],
+            [137, 161, "SOURCECODE"],
+            [225, 237, "CAPABILITY"]
+        ]
+    }],
+    ["The acpi_smbus_hc_add function in drivers/acpi/sbshc.c in the Linux kernel through 4.14.15 allows local users to obtain sensitive address information by reading dmesg data from an SBS HC printk call.\r\n", {
+        "entities": [
+            [4, 21, "FUNCTION"],
+            [83, 90, "VERSION"],
+            [34, 54, "SOURCECODE"],
+            [113, 137, "CAPABILITY"]
+        ]
+    }],
+    ["The tcp_v6_syn_recv_sock function in net/ipv6/tcp_ipv6.c in the Linux kernel through 4.14.11 allows attackers to cause a denial of service (slab out-of-bounds write) or possibly have unspecified other impact via vectors involving TLS.\r\n", {
+        "entities": [
+            [4, 24, "FUNCTION"],
+            [85, 92, "VERSION"],
+            [37, 56, "SOURCECODE"],
+            [140, 158, "VULNERABILITY"],
+            [121, 138, "CAPABILITY"],
+            [178, 207, "CAPABILITY"]
+        ]
+    }],
+    ["The Linux kernel, versions 3.9+, is vulnerable to a denial of service attack with low rates of specially modified packets targeting IP fragment re-assembly. An attacker may cause a denial of service condition by sending specially crafted IP fragments. Various vulnerabilities in IP fragmentation have been discovered and fixed over the years. The current vulnerability (CVE-2018-5391) became exploitable in the Linux kernel with the increase of the IP fragment reassembly queue size.\r\n", {
+        "entities": [
+            [27, 30, "VERSION"],
+            [52, 69, "CAPABILITY"]
+        ]
+    }],
+    ["Linux kernel versions 4.9+ can be forced to make very expensive calls to tcp_collapse_ofo_queue() and tcp_prune_ofo_queue() for every incoming packet which can lead to a denial of service.\r\n", {
+        "entities": [
+            [73, 95, "FUNCTION"],
+            [102, 121, "FUNCTION"],
+            [22, 25, "VERSION"],
+            [49, 69, "VULNERABILITY"],
+            [170, 187, "CAPABILITY"]
+        ]
+    }],
+    ["In the Linux kernel through 4.14.13, drivers/block/loop.c mishandles lo_release serialization, which allows attackers to cause a denial of service (__lock_acquire use-after-free) or possibly have unspecified other impact.\r\n", {
+        "entities": [
+            [69, 79, "STRUCT"],
+            [150, 162, "FUNCTION"],
+            [28, 35, "VERSION"],
+            [37, 57, "SOURCECODE"],
+            [163, 177, "VULNERABILITY"],
+            [129, 146, "CAPABILITY"],
+            [191, 220, "CAPABILITY"]
+        ]
+    }],
+    ["In the Linux kernel through 4.14.13, the rds_cmsg_atomic function in net/rds/rdma.c mishandles cases where page pinning fails or an invalid address is supplied, leading to an rds_atomic_free_op NULL pointer dereference.\r\n", {
+        "entities": [
+            [41, 56, "FUNCTION"],
+            [175, 193, "FUNCTION"],
+            [28, 35, "VERSION"],
+            [69, 83, "SOURCECODE"],
+            [194, 218, "VULNERABILITY"]
+        ]
+    }],
+    ["In the Linux kernel through 4.14.13, the rds_message_alloc_sgs() function does not validate a value that is used during DMA page allocation, leading to a heap-based out-of-bounds write (related to the rds_rdma_extra_size function in net/rds/rdma.c).\r\n", {
+        "entities": [
+            [41, 62, "FUNCTION"],
+            [201, 220, "FUNCTION"],
+            [28, 35, "VERSION"],
+            [233, 247, "SOURCECODE"],
+            [79, 99, "VULNERABILITY"],
+            [154, 178, "VULNERABILITY"]
+        ]
+    }],
+    ["Linux kernel before version 4.16-rc7 is vulnerable to a null pointer dereference in dccp_write_xmit() function in net/dccp/output.c in that allows a local user to cause a denial of service by a number of certain crafted system calls.\r\n", {
+        "entities": [
+            [84, 99, "FUNCTION"],
+            [28, 36, "VERSION"],
+            [114, 131, "SOURCECODE"],
+            [56, 80, "VULNERABILITY"],
+            [171, 188, "CAPABILITY"]
+        ]
+    }],
+    ["A flaw was found affecting the Linux kernel before version 4.17. By mmap()ing a FUSE-backed file onto a process's memory containing command line arguments (or environment strings), an attacker can cause utilities from psutils or procps (such as ps, w) or any other program which makes a read() call to the /proc/<pid>/cmdline (or /proc/<pid>/environ) files to block indefinitely (denial of service) or for some controlled time (as a synchronization primitive for other attacks).\r\n", {
+        "entities": [
+            [59, 63, "VERSION"],
+            [380, 397, "CAPABILITY"],
+            [433, 458, "CAPABILITY"]
+        ]
+    }],
+    ["Linux kernel vhost since version 4.8 does not properly initialize memory in messages passed between virtual guests and the host operating system in the vhost/vhost.c:vhost_new_msg() function. This can allow local privileged users to read some kernel memory contents when reading from the /dev/vhost-net device file.\r\n", {
+        "entities": [
+            [166, 179, "FUNCTION"],
+            [33, 36, "VERSION"],
+            [152, 165, "SOURCECODE"],
+            [288, 298, "DRIVER"],
+            [37, 72, "VULNERABILITY"],
+            [233, 265, "CAPABILITY"]
+        ]
+    }],
+    ["kernel drivers before version 4.17-rc1 are vulnerable to a weakness in the Linux kernel's implementation of random seed data. Programs, early in the boot sequence, could use the data allocated for the seed before it was sufficiently generated.\r\n", {
+        "entities": [
+            [30, 38, "VERSION"],
+            [90, 124, "VULNERABILITY"]
+        ]
+    }],
+    ["The ext4_xattr_check_entries function in fs/ext4/xattr.c in the Linux kernel through 4.15.15 does not properly validate xattr sizes, which causes misinterpretation of a size as an error code, and consequently allows attackers to cause a denial of service (get_acl NULL pointer dereference and system crash) via a crafted ext4 image.\r\n", {
+        "entities": [
+            [4, 28, "FUNCTION"],
+            [256, 263, "STRUCT"],
+            [85, 92, "VERSION"],
+            [41, 56, "SOURCECODE"],
+            [93, 119, "VULNERABILITY"],
+            [121, 126, "STRUCT"],
+            [264, 288, "VULNERABILITY"],
+            [293, 305, "CAPABILITY"]
+
+        ]
+    }],
+    ["The ext4_fill_super function in fs/ext4/super.c in the Linux kernel through 4.15.15 does not always initialize the crc32c checksum driver, which allows attackers to cause a denial of service (ext4_xattr_inode_hash NULL pointer dereference and system crash) via a crafted ext4 image.\r\n", {
+        "entities": [
+            [4, 19, "FUNCTION"],
+            [192, 213, "FUNCTION"],
+            [76, 83, "VERSION"],
+            [32, 47, "SOURCECODE"],
+            [120, 131, "DRIVER"],
+            [214, 238, "VULNERABILITY"],
+            [173, 190, "CAPABILITY"],
+            [243, 255, "CAPABILITY"]
+        ]
+    }],
+    ["The ext4_valid_block_bitmap function in fs/ext4/balloc.c in the Linux kernel through 4.15.15 allows attackers to cause a denial of service (out-of-bounds read and system crash) via a crafted ext4 image because balloc.c and ialloc.c do not validate bitmap block numbers.\r\n", {
+        "entities": [
+            [4, 27, "FUNCTION"],
+            [85, 92, "VERSION"],
+            [40, 56, "SOURCECODE"],
+            [140, 153, "VULNERABILITY"],
+            [232, 268, "VULNERABILITY"],
+            [210, 218, "SOURCECODE"],
+            [223, 231, "SOURCECODE"],
+            [163, 175, "CAPABILITY"]
+        ]
+    }],
+    ["The ext4_iget function in fs/ext4/inode.c in the Linux kernel through 4.15.15 mishandles the case of a root directory with a zero i_links_count, which allows attackers to cause a denial of service (ext4_process_freed_data NULL pointer dereference and OOPS) via a crafted ext4 image.\r\n", {
+        "entities": [
+            [4, 13, "FUNCTION"],
+            [130, 143, "STRUCT"],
+            [198, 221, "FUNCTION"],
+            [70, 77, "VERSION"],
+            [26, 41, "SOURCECODE"],
+            [222, 246, "VULNERABILITY"],
+            [251, 255, "VULNERABILITY"],
+            [179, 196, "CAPABILITY"]
+        ]
+    }],
+    ["In the flush_tmregs_to_thread function in arch/powerpc/kernel/ptrace.c in the Linux kernel before 4.13.5, a guest kernel crash can be triggered from unprivileged userspace during a core dump on a POWER host due to a missing processor feature check and an erroneous use of transactional memory (TM) instructions in the core dump path, leading to a denial of service.\r\n", {
+        "entities": [
+            [7, 29, "FUNCTION"],
+            [98, 104, "VERSION"],
+            [42, 70, "SOURCECODE"],
+            [216, 247, "VULNERABILITY"],
+            [255, 291, "VULNERABILITY"],
+            [114, 126, "CAPABILITY"],
+            [347, 364, "CAPABILITY"]
+        ]
+    }],
+    ["kernel KVM before versions kernel 4.16, kernel 4.16-rc7, kernel 4.17-rc1, kernel 4.17-rc2 and kernel 4.17-rc3 is vulnerable to a flaw in the way the Linux kernel's KVM hypervisor handled exceptions delivered after a stack switch operation via Mov SS or Pop SS instructions. During the stack switch operation, the processor did not deliver interrupts and exceptions, rather they are delivered once the first instruction after the stack switch is executed. An unprivileged KVM guest user could use this flaw to crash the guest or, potentially, escalate their privileges in the guest.\r\n", {
+        "entities": [
+            [34, 38, "VERSION"],
+            [47, 55, "VERSION"],
+            [64, 72, "VERSION"],
+            [81, 89, "VERSION"],
+            [101, 109, "VERSION"],
+            [313, 364, "VULNERABILITY"],
+            [509, 524, "CAPABILITY"],
+            [542, 567, "CAPABILITY"],
+            [8, 11, "DRIVER"]
+        ]
+    }],
+    ["A flaw was found in the Linux 4.x kernel's implementation of 32-bit syscall interface for bridging. This allowed a privileged user to arbitrarily write to a limited range of kernel memory.", {
+        "entities": [
+            [30, 33, "VERSION"],
+            [134, 151, "CAPABILITY"]
+        ]
+    }],
+    ["A flaw was found in the Linux kernel's ext4 filesystem. A local user can cause an out-of-bounds write and a denial of service or unspecified other impact is possible by mounting and operating a crafted ext4 filesystem image.\r\n", {
+        "entities": [
+            [39, 54, "DRIVER"],
+            [82, 95, "VULNERABILITY"],
+            [108, 125, "CAPABILITY"],
+            [129, 153, "CAPABILITY"]
+        ]
+    }],
+    ["Linux kernel ext4 filesystem is vulnerable to an out-of-bound access in the ext4_ext_drop_refs() function when operating on a crafted ext4 filesystem image.\r\n", {
+        "entities": [
+            [76, 94, "FUNCTION"],
+            [13, 28, "DRIVER"],
+            [49, 61, "VULNERABILITY"]
+        ]
+    }],
+    ["A flaw was found in Linux kernel in the ext4 filesystem code. A use-after-free is possible in ext4_ext_remove_space() function when mounting and operating a crafted ext4 image.\r\n", {
+        "entities": [
+            [94, 115, "FUNCTION"],
+            [40, 55, "DRIVER"],
+            [64, 78, "VULNERABILITY"]
+        ]
+    }],
+    ["A flaw was found in the way Linux kernel KVM hypervisor before 4.18 emulated instructions such as sgdt/sidt/fxsave/fxrstor. It did not check current privilege(CPL) level while emulating unprivileged instructions. An unprivileged guest user/process could use this flaw to potentially escalate privileges inside guest.\r\n", {
+        "entities": [
+            [63, 67, "VERSION"],
+            [98, 122, "SOURCECODE"],
+            [41, 55, "DRIVER"],
+            [127, 158, "VULNERABILITY"],
+            [283, 302, "CAPABILITY"]
+        ]
+    }],
+    ["Linux kernel is vulnerable to a heap-based buffer overflow in the fs/ext4/xattr.c:ext4_xattr_set_entry() function. An attacker could exploit this by operating on a mounted crafted ext4 image.\r\n", {
+        "entities": [
+            [83, 102, "FUNCTION"],
+            [66, 81, "SOURCECODE"],
+            [32, 58, "VULNERABILITY"]
+        ]
+    }],
+    ["The do_get_mempolicy function in mm/mempolicy.c in the Linux kernel before 4.12.9 allows local users to cause a denial of service (use-after-free) or possibly have unspecified other impact via crafted system calls.\r\n", {
+        "entities": [
+            [4, 20, "FUNCTION"],
+            [75, 81, "VERSION"],
+            [33, 47, "SOURCECODE"],
+            [112, 129, "CAPABILITY"],
+            [159, 188, "CAPABILITY"],
+            [131, 145, "VULNERABILITY"]
+        ]
+    }],
+    ["The xfs_bmap_extents_to_btree function in fs/xfs/libxfs/xfs_bmap.c in the Linux kernel through 4.16.3 allows local users to cause a denial of service (xfs_bmapi_write NULL pointer dereference) via a crafted xfs image.\r\n", {
+        "entities": [
+            [4, 29, "FUNCTION"],
+            [151, 166, "FUNCTION"],
+            [95, 101, "VERSION"],
+            [42, 66, "SOURCECODE"],
+            [167, 191, "VULNERABILITY"],
+            [132, 149, "CAPABILITY"]
+        ]
+    }],
+    ["The xfs_dinode_verify function in fs/xfs/libxfs/xfs_inode_buf.c in the Linux kernel through 4.16.3 allows local users to cause a denial of service (xfs_ilock_attr_map_shared invalid pointer dereference) via a crafted xfs image.\r\n", {
+        "entities": [
+            [4, 21, "FUNCTION"],
+            [148, 173, "FUNCTION"],
+            [92, 98, "VERSION"],
+            [34, 63, "SOURCECODE"],
+            [174, 201, "VULNERABILITY"],
+            [129, 146, "CAPABILITY"]
+        ]
+    }],
+    ["The kill_something_info function in kernel/signal.c in the Linux kernel before 4.13, when an unspecified architecture and compiler is used, might allow local users to cause a denial of service via an INT_MIN argument.\r\n", {
+        "entities": [
+            [4, 23, "FUNCTION"],
+            [200, 207, "STRUCT"],
+            [79, 83, "VERSION"],
+            [36, 51, "SOURCECODE"],
+            [175, 192, "CAPABILITY"]
+        ]
+    }],
+    ["The kernel_wait4 function in kernel/exit.c in the Linux kernel before 4.13, when an unspecified architecture and compiler is used, might allow local users to cause a denial of service by triggering an attempted use of the -INT_MIN value.\r\n", {
+        "entities": [
+            [4, 16, "FUNCTION"],
+            [223, 230, "STRUCT"],
+            [70, 74, "VERSION"],
+            [29, 42, "SOURCECODE"],
+            [166, 183, "CAPABILITY"]
+        ]
+    }],
+    ["The hi3660_stub_clk_probe function in drivers/clk/hisilicon/clk-hi3660-stub.c in the Linux kernel before 4.16 allows local users to cause a denial of service (NULL pointer dereference) by triggering a failure of resource retrieval.\r\n", {
+        "entities": [
+            [4, 25, "FUNCTION"],
+            [105, 109, "VERSION"],
+            [26, 77, "SOURCECODE"],
+            [159, 183, "VULNERABILITY"],
+            [140, 157, "CAPABILITY"]
+        ]
+    }],
+    ["drivers/scsi/libsas/sas_scsi_host.c in the Linux kernel before 4.16 allows local users to cause a denial of service (ata qc leak) by triggering certain failure conditions. NOTE: a third party disputes the relevance of this report because the failure can only occur for physically proximate attackers who unplug SAS Host Bus Adapter cables.\r\n", {
+        "entities": [
+            [63, 67, "VERSION"],
+            [0, 35, "SOURCECODE"],
+            [98, 115, "CAPABILITY"],
+            [117, 128, "VULNERABILITY"]
+        ]
+    }],
+    ["Incorrect buffer length handling in the ncp_read_kernel function in fs/ncpfs/ncplib_kernel.c in the Linux kernel through 4.15.11, and in drivers/staging/ncpfs/ncplib_kernel.c in the Linux kernel 4.16-rc through 4.16-rc6, could be exploited by malicious NCPFS servers to crash the kernel or execute code.\r\n", {
+        "entities": [
+            [40, 55, "FUNCTION"],
+            [121, 128, "VERSION"],
+            [195, 202, "VERSION"],
+            [211, 219, "VERSION"],
+            [68, 92, "SOURCECODE"],
+            [137, 174, "SOURCECODE"],
+            [68, 89, "DRIVER"],
+            [0, 32, "VULNERABILITY"],
+            [270, 286, "CAPABILITY"],
+            [290, 302, "CAPABILITY"]
+        ]
+    }],
+    ["The udl_fb_mmap function in drivers/gpu/drm/udl/udl_fb.c at the Linux kernel version 3.4 and up to and including 4.15 has an integer-overflow vulnerability allowing local users with access to the udldrmfb driver to obtain full read and write permissions on kernel physical pages, resulting in a code execution in kernel space.\r\n", {
+        "entities": [
+            [4, 15, "FUNCTION"],
+            [85, 88, "VERSION"],
+            [113, 117, "VERSION"],
+            [28, 56, "SOURCECODE"],
+            [192, 205, "DRIVER"],
+            [125, 141, "VULNERABILITY"],
+            [227, 278, "CAPABILITY"]
+        ]
+    }],
+    ["Memory leak in the hwsim_new_radio_nl function in drivers/net/wireless/mac80211_hwsim.c in the Linux kernel through 4.15.9 allows local users to cause a denial of service (memory consumption) by triggering an out-of-array error case.\r\n", {
+        "entities": [
+            [19, 37, "FUNCTION"],
+            [116, 122, "VERSION"],
+            [50, 87, "SOURCECODE"],
+            [0, 11, "VULNERABILITY"],
+            [172, 190, "VULNERABILITY"],
+            [153, 170, "CAPABILITY"]
+        ]
+    }],
+    ["The unimac_mdio_probe function in drivers/net/phy/mdio-bcm-unimac.c in the Linux kernel through 4.15.8 does not validate certain resource availability, which allows local users to cause a denial of service (NULL pointer dereference).\r\n", {
+        "entities": [
+            [4, 21, "FUNCTION"],
+            [96, 102, "VERSION"],
+            [34, 67, "SOURCECODE"],
+            [103, 137, "VULNERABILITY"],
+            [207, 231, "VULNERABILITY"],
+            [188, 205, "CAPABILITY"]
+        ]
+    }],
+    ["Race condition in the store_int_with_restart() function in arch/x86/kernel/cpu/mcheck/mce.c in the Linux kernel through 4.15.7 allows local users to cause a denial of service (panic) by leveraging root access to write to the check_interval file in a /sys/devices/system/machinecheck/machinecheck<cpu number> directory. NOTE: a third party has indicated that this report is not security relevant.\r\n", {
+        "entities": [
+            [22, 44, "FUNCTION"],
+            [225, 239, "STRUCT"],
+            [120, 126, "VERSION"],
+            [59, 91, "SOURCECODE"],
+            [250, 295, "DRIVER"],
+            [0, 14, "VULNERABILITY"],
+            [157, 174, "CAPABILITY"],
+            [176, 181, "CAPABILITY"]
+        ]
+    }],
+    ["Memory leak in the sas_smp_get_phy_events function in drivers/scsi/libsas/sas_expander.c in the Linux kernel through 4.15.7 allows local users to cause a denial of service (memory consumption) via many read accesses to files in the /sys/class/sas_phy directory, as demonstrated by the /sys/class/sas_phy/phy-1:0:12/invalid_dword_count file.\r\n", {
+        "entities": [
+            [19, 41, "FUNCTION"],
+            [74, 86, "FUNCTION"],
+            [315, 334, "FUNCTION"],
+            [117, 123, "VERSION"],
+            [54, 88, "SOURCECODE"],
+            [232, 250, "DRIVER"],
+            [285, 334, "DRIVER"],
+            [0, 11, "VULNERABILITY"],
+            [173, 191, "VULNERABILITY"],
+            [154, 171, "CAPABILITY"]
+        ]
+    }],
+    ["An issue was discovered in the fd_locked_ioctl function in drivers/block/floppy.c in the Linux kernel through 4.15.7. The floppy driver will copy a kernel pointer to user memory in response to the FDGETPRM ioctl. An attacker can send the FDGETPRM ioctl and use the obtained kernel pointer to discover the location of kernel code and data and bypass kernel security protections such as KASLR.\r\n", {
+        "entities": [
+            [31, 46, "FUNCTION"],
+            [110, 116, "VERSION"],
+            [59, 81, "SOURCECODE"],
+            [118, 129, "DRIVER"],
+            [342, 376, "CAPABILITY"]
+        ]
+    }],
+    ["The aoedisk_debugfs_show function in drivers/block/aoe/aoeblk.c in the Linux kernel through 4.16.4rc4 allows local users to obtain sensitive address information by reading \"ffree: \" lines in a debugfs file.\r\n", {
+        "entities": [
+            [4, 24, "FUNCTION"],
+            [92, 101, "VERSION"],
+            [37, 63, "SOURCECODE"],
+            [124, 160, "CAPABILITY"]
+        ]
+    }],
+    ["The resv_map_release function in mm/hugetlb.c in the Linux kernel through 4.15.7 allows local users to cause a denial of service (BUG) via a crafted application that makes mmap system calls and has a large pgoff argument to the remap_file_pages system call.\r\n", {
+        "entities": [
+            [4, 20, "FUNCTION"],
+            [228, 244, "FUNCTION"],
+            [74, 80, "VERSION"],
+            [33, 45, "SOURCECODE"],
+            [172, 176, "VULNERABILITY"],
+            [111, 128, "CAPABILITY"]
+        ]
+    }],
+    ["The Linux kernel 4.15 has a Buffer Overflow via an SNDRV_SEQ_IOCTL_SET_CLIENT_POOL ioctl write operation to /dev/snd/seq by a local user.\r\n", {
+        "entities": [
+            [51, 82, "FUNCTION"],
+            [17, 21, "VERSION"],
+            [108, 120, "DRIVER"],
+            [28, 43, "VULNERABILITY"]
+        ]
+    }],
+    ["A NULL pointer dereference was found in the net/rds/rdma.c __rds_rdma_map() function in the Linux kernel before 4.14.7 allowing local attackers to cause a system panic and a denial-of-service, related to RDS_GET_MR and RDS_GET_MR_FOR_DEST.\r\n", {
+        "entities": [
+            [61, 73, "FUNCTION"],
+            [204, 214, "STRUCT"],
+            [219, 238, "STRUCT"],
+            [112, 118, "VERSION"],
+            [44, 58, "SOURCECODE"],
+            [2, 26, "VULNERABILITY"],
+            [155, 167, "CAPABILITY"],
+            [174, 191, "CAPABILITY"]
+        ]
+    }],
+    ["The blkcg_init_queue function in block/blk-cgroup.c in the Linux kernel before 4.11 allows local users to cause a denial of service (double free) or possibly have unspecified other impact by triggering a creation failure.\r\n", {
+        "entities": [
+            [4, 20, "FUNCTION"],
+            [79, 83, "VERSION"],
+            [33, 51, "DRIVER"],
+            [133, 144, "VULNERABILITY"],
+            [114, 131, "CAPABILITY"],
+            [158, 187, "CAPABILITY"]
+        ]
+    }],
+    ["In the Linux kernel through 4.15.4, the floppy driver reveals the addresses of kernel functions and global variables using printk calls within the function show_floppy in drivers/block/floppy.c. An attacker can read this information from dmesg and use the addresses to find the locations of kernel code and data and bypass kernel security protections such as KASLR.\r\n", {
+        "entities": [
+            [156, 167, "FUNCTION"],
+            [28, 34, "VERSION"],
+            [171, 193, "SOURCECODE"],
+            [36, 47, "DRIVER"],
+            [54, 75, "VULNERABILITY"],
+            [316, 350, "CAPABILITY"]
+        ]
+    }],
+    ["The futex_requeue function in kernel/futex.c in the Linux kernel before 4.14.15 might allow attackers to cause a denial of service (integer overflow) or possibly have unspecified other impact by triggering a negative wake or requeue value.\r\n", {
+        "entities": [
+            [4, 17, "FUNCTION"],
+            [72, 79, "VERSION"],
+            [30, 44, "SOURCECODE"],
+            [132, 148, "VULNERABILITY"],
+            [113, 130, "CAPABILITY"],
+            [162, 191, "CAPABILITY"]
+        ]
+    }],
+    ["The irda_setsockopt function in net/irda/af_irda.c and later in drivers/staging/irda/net/af_irda.c in the Linux kernel before 4.17 allows local users to cause a denial of service (ias_object use-after-free and system crash) or possibly have unspecified other impact via an AF_IRDA socket.\r\n", {
+        "entities": [
+            [4, 19, "FUNCTION"],
+            [180, 190, "STRUCT"],
+            [273, 280, "FUNCTION"],
+            [126, 130, "VERSION"],
+            [32, 50, "SOURCECODE"],
+            [64, 98, "SOURCECODE"],
+            [191, 205, "VULNERABILITY"],
+            [161, 178, "CAPABILITY"],
+            [210, 222, "CAPABILITY"],
+            [236, 265, "CAPABILITY"]
+        ]
+    }],
+    ["Memory leak in the irda_bind function in net/irda/af_irda.c and later in drivers/staging/irda/net/af_irda.c in the Linux kernel before 4.17 allows local users to cause a denial of service (memory consumption) by repeatedly binding an AF_IRDA socket.\r\n", {
+        "entities": [
+            [19, 28, "FUNCTION"],
+            [98, 105, "FUNCTION"],
+            [234, 241, "STRUCT"],
+            [135, 139, "VERSION"],
+            [41, 59, "SOURCECODE"],
+            [73, 107, "SOURCECODE"],
+            [0, 11, "VULNERABILITY"],
+            [189, 207, "VULNERABILITY"],
+            [170, 187, "CAPABILITY"]
+        ]
+    }],
+    ["In the function sbusfb_ioctl_helper() in drivers/video/fbdev/sbuslib.c in the Linux kernel through 4.15, an integer signedness error allows arbitrary information leakage for the FBIOPUTCMAP_SPARC and FBIOGETCMAP_SPARC commands.\r\n", {
+        "entities": [
+            [16, 35, "FUNCTION"],
+            [178, 195, "STRUCT"],
+            [200, 217, "STRUCT"],
+            [99, 103, "VERSION"],
+            [41, 70, "SOURCECODE"],
+            [108, 126, "VULNERABILITY"],
+            [150, 169, "CAPABILITY"]
+        ]
+    }],
+    ["The pcpu_embed_first_chunk function in mm/percpu.c in the Linux kernel through 4.14.14 allows local users to obtain sensitive address information by reading dmesg data from a \"pages/cpu\" printk call.\r\n", {
+        "entities": [
+            [4, 26, "FUNCTION"],
+            [79, 86, "VERSION"],
+            [39, 50, "SOURCECODE"],
+            [176, 185, "DRIVER"],
+            [109, 133, "CAPABILITY"]
+        ]
+    }],
+    ["The swiotlb_print_info function in lib/swiotlb.c in the Linux kernel through 4.14.14 allows local users to obtain sensitive address information by reading dmesg data from a \"software IO TLB\" printk call.\r\n", {
+        "entities": [
+            [4, 22, "FUNCTION"],
+            [77, 84, "VERSION"],
+            [35, 48, "SOURCECODE"],
+            [107, 131, "CAPABILITY"]
+        ]
+    }],
+    ["An issue was discovered in the __ns_get_path function in fs/nsfs.c in the Linux kernel before 4.11. Due to a race condition when accessing files, a Use After Free condition can occur. This also affects all Android releases from CAF using the Linux kernel (Android for MSM, Firefox OS for MSM, QRD Android) before security patch level 2018-07-05.\r\n", {
+        "entities": [
+            [33, 44, "FUNCTION"],
+            [94, 98, "VERSION"],
+            [57, 66, "SOURCECODE"],
+            [109, 123, "VULNERABILITY"],
+            [148, 162, "VULNERABILITY"]
+        ]
+    }],
+    ["In the Linux Kernel before version 4.16.11, 4.14.43, 4.9.102, and 4.4.133, multiple race condition errors when handling probe, disconnect, and rebind operations can be exploited to trigger a use-after-free condition or a NULL pointer dereference by sending multiple USB over IP packets.\r\n", {
+        "entities": [
+            [35, 42, "VERSION"],
+            [44, 51, "VERSION"],
+            [53, 60, "VERSION"],
+            [66, 73, "VERSION"],
+            [84, 98, "VULNERABILITY"],
+            [120, 125, "FUNCTION"],
+            [127, 137, "FUNCTION"],
+            [143, 149, "FUNCTION"],
+            [191, 205, "VULNERABILITY"],
+            [221, 245, "VULNERABILITY"]
+        ]
+    }],
+    ["In the Linux Kernel before version 4.15.8, 4.14.25, 4.9.87, 4.4.121, 4.1.51, and 3.2.102, an error in the \"_sctp_make_chunk()\" function (net/sctp/sm_make_chunk.c) when handling SCTP packets length can be exploited to cause a kernel crash.\r\n", {
+        "entities": [
+            [108, 123, "FUNCTION"],
+            [35, 41, "VERSION"],
+            [43, 50, "VERSION"],
+            [52, 58, "VERSION"],
+            [60, 67, "VERSION"],
+            [69, 75, "VERSION"],
+            [81, 88, "VERSION"],
+            [137, 161, "SOURCECODE"],
+            [225, 237, "CAPABILITY"]
+        ]
+    }],
+    ["The acpi_smbus_hc_add function in drivers/acpi/sbshc.c in the Linux kernel through 4.14.15 allows local users to obtain sensitive address information by reading dmesg data from an SBS HC printk call.\r\n", {
+        "entities": [
+            [4, 21, "FUNCTION"],
+            [83, 90, "VERSION"],
+            [34, 54, "SOURCECODE"],
+            [113, 137, "CAPABILITY"]
+        ]
+    }],
+    ["The tcp_v6_syn_recv_sock function in net/ipv6/tcp_ipv6.c in the Linux kernel through 4.14.11 allows attackers to cause a denial of service (slab out-of-bounds write) or possibly have unspecified other impact via vectors involving TLS.\r\n", {
+        "entities": [
+            [4, 24, "FUNCTION"],
+            [85, 92, "VERSION"],
+            [37, 56, "SOURCECODE"],
+            [140, 158, "VULNERABILITY"],
+            [121, 138, "CAPABILITY"],
+            [178, 207, "CAPABILITY"]
+        ]
+    }],
+    ["The Linux kernel, versions 3.9+, is vulnerable to a denial of service attack with low rates of specially modified packets targeting IP fragment re-assembly. An attacker may cause a denial of service condition by sending specially crafted IP fragments. Various vulnerabilities in IP fragmentation have been discovered and fixed over the years. The current vulnerability (CVE-2018-5391) became exploitable in the Linux kernel with the increase of the IP fragment reassembly queue size.\r\n", {
+        "entities": [
+            [27, 30, "VERSION"],
+            [52, 69, "CAPABILITY"]
+        ]
+    }],
+    ["Linux kernel versions 4.9+ can be forced to make very expensive calls to tcp_collapse_ofo_queue() and tcp_prune_ofo_queue() for every incoming packet which can lead to a denial of service.\r\n", {
+        "entities": [
+            [73, 95, "FUNCTION"],
+            [102, 121, "FUNCTION"],
+            [22, 25, "VERSION"],
+            [49, 69, "VULNERABILITY"],
+            [170, 187, "CAPABILITY"]
+        ]
+    }],
+    ["In the Linux kernel through 4.14.13, drivers/block/loop.c mishandles lo_release serialization, which allows attackers to cause a denial of service (__lock_acquire use-after-free) or possibly have unspecified other impact.\r\n", {
+        "entities": [
+            [69, 79, "STRUCT"],
+            [150, 162, "FUNCTION"],
+            [28, 35, "VERSION"],
+            [37, 57, "SOURCECODE"],
+            [163, 177, "VULNERABILITY"],
+            [129, 146, "CAPABILITY"],
+            [191, 220, "CAPABILITY"]
+        ]
+    }],
+    ["In the Linux kernel through 4.14.13, the rds_cmsg_atomic function in net/rds/rdma.c mishandles cases where page pinning fails or an invalid address is supplied, leading to an rds_atomic_free_op NULL pointer dereference.\r\n", {
+        "entities": [
+            [41, 56, "FUNCTION"],
+            [175, 193, "FUNCTION"],
+            [28, 35, "VERSION"],
+            [69, 83, "SOURCECODE"],
+            [194, 218, "VULNERABILITY"]
+        ]
+    }],
+    ["In the Linux kernel through 4.14.13, the rds_message_alloc_sgs() function does not validate a value that is used during DMA page allocation, leading to a heap-based out-of-bounds write (related to the rds_rdma_extra_size function in net/rds/rdma.c).\r\n", {
+        "entities": [
+            [41, 62, "FUNCTION"],
+            [201, 220, "FUNCTION"],
+            [28, 35, "VERSION"],
+            [233, 247, "SOURCECODE"],
+            [79, 99, "VULNERABILITY"],
+            [154, 178, "VULNERABILITY"]
+        ]
+    }],
+    ["Linux kernel before version 4.16-rc7 is vulnerable to a null pointer dereference in dccp_write_xmit() function in net/dccp/output.c in that allows a local user to cause a denial of service by a number of certain crafted system calls.\r\n", {
+        "entities": [
+            [84, 99, "FUNCTION"],
+            [28, 36, "VERSION"],
+            [114, 131, "SOURCECODE"],
+            [56, 80, "VULNERABILITY"],
+            [171, 188, "CAPABILITY"]
+        ]
+    }],
+    ["A flaw was found affecting the Linux kernel before version 4.17. By mmap()ing a FUSE-backed file onto a process's memory containing command line arguments (or environment strings), an attacker can cause utilities from psutils or procps (such as ps, w) or any other program which makes a read() call to the /proc/<pid>/cmdline (or /proc/<pid>/environ) files to block indefinitely (denial of service) or for some controlled time (as a synchronization primitive for other attacks).\r\n", {
+        "entities": [
+            [59, 63, "VERSION"],
+            [380, 397, "CAPABILITY"],
+            [433, 458, "CAPABILITY"]
+        ]
+    }],
+    ["Linux kernel vhost since version 4.8 does not properly initialize memory in messages passed between virtual guests and the host operating system in the vhost/vhost.c:vhost_new_msg() function. This can allow local privileged users to read some kernel memory contents when reading from the /dev/vhost-net device file.\r\n", {
+        "entities": [
+            [166, 179, "FUNCTION"],
+            [33, 36, "VERSION"],
+            [152, 165, "SOURCECODE"],
+            [288, 298, "DRIVER"],
+            [37, 72, "VULNERABILITY"],
+            [233, 265, "CAPABILITY"]
+        ]
+    }],
+    ["kernel drivers before version 4.17-rc1 are vulnerable to a weakness in the Linux kernel's implementation of random seed data. Programs, early in the boot sequence, could use the data allocated for the seed before it was sufficiently generated.\r\n", {
+        "entities": [
+            [30, 38, "VERSION"],
+            [90, 124, "VULNERABILITY"]
+        ]
+    }],
+    ["The ext4_xattr_check_entries function in fs/ext4/xattr.c in the Linux kernel through 4.15.15 does not properly validate xattr sizes, which causes misinterpretation of a size as an error code, and consequently allows attackers to cause a denial of service (get_acl NULL pointer dereference and system crash) via a crafted ext4 image.\r\n", {
+        "entities": [
+            [4, 28, "FUNCTION"],
+            [256, 263, "STRUCT"],
+            [85, 92, "VERSION"],
+            [41, 56, "SOURCECODE"],
+            [93, 119, "VULNERABILITY"],
+            [121, 126, "STRUCT"],
+            [264, 288, "VULNERABILITY"],
+            [293, 305, "CAPABILITY"]
+
+        ]
+    }],
+    ["The ext4_fill_super function in fs/ext4/super.c in the Linux kernel through 4.15.15 does not always initialize the crc32c checksum driver, which allows attackers to cause a denial of service (ext4_xattr_inode_hash NULL pointer dereference and system crash) via a crafted ext4 image.\r\n", {
+        "entities": [
+            [4, 19, "FUNCTION"],
+            [192, 213, "FUNCTION"],
+            [76, 83, "VERSION"],
+            [32, 47, "SOURCECODE"],
+            [120, 131, "DRIVER"],
+            [214, 238, "VULNERABILITY"],
+            [173, 190, "CAPABILITY"],
+            [243, 255, "CAPABILITY"]
+        ]
+    }],
+    ["The ext4_valid_block_bitmap function in fs/ext4/balloc.c in the Linux kernel through 4.15.15 allows attackers to cause a denial of service (out-of-bounds read and system crash) via a crafted ext4 image because balloc.c and ialloc.c do not validate bitmap block numbers.\r\n", {
+        "entities": [
+            [4, 27, "FUNCTION"],
+            [85, 92, "VERSION"],
+            [40, 56, "SOURCECODE"],
+            [140, 153, "VULNERABILITY"],
+            [232, 268, "VULNERABILITY"],
+            [210, 218, "SOURCECODE"],
+            [223, 231, "SOURCECODE"],
+            [163, 175, "CAPABILITY"]
+        ]
+    }],
+    ["The ext4_iget function in fs/ext4/inode.c in the Linux kernel through 4.15.15 mishandles the case of a root directory with a zero i_links_count, which allows attackers to cause a denial of service (ext4_process_freed_data NULL pointer dereference and OOPS) via a crafted ext4 image.\r\n", {
+        "entities": [
+            [4, 13, "FUNCTION"],
+            [130, 143, "STRUCT"],
+            [198, 221, "FUNCTION"],
+            [70, 77, "VERSION"],
+            [26, 41, "SOURCECODE"],
+            [222, 246, "VULNERABILITY"],
+            [251, 255, "VULNERABILITY"],
+            [179, 196, "CAPABILITY"]
+        ]
+    }],
+    ["In the flush_tmregs_to_thread function in arch/powerpc/kernel/ptrace.c in the Linux kernel before 4.13.5, a guest kernel crash can be triggered from unprivileged userspace during a core dump on a POWER host due to a missing processor feature check and an erroneous use of transactional memory (TM) instructions in the core dump path, leading to a denial of service.\r\n", {
+        "entities": [
+            [7, 29, "FUNCTION"],
+            [98, 104, "VERSION"],
+            [42, 70, "SOURCECODE"],
+            [216, 247, "VULNERABILITY"],
+            [255, 291, "VULNERABILITY"],
+            [114, 126, "CAPABILITY"],
+            [347, 364, "CAPABILITY"]
+        ]
+    }],
+    ["kernel KVM before versions kernel 4.16, kernel 4.16-rc7, kernel 4.17-rc1, kernel 4.17-rc2 and kernel 4.17-rc3 is vulnerable to a flaw in the way the Linux kernel's KVM hypervisor handled exceptions delivered after a stack switch operation via Mov SS or Pop SS instructions. During the stack switch operation, the processor did not deliver interrupts and exceptions, rather they are delivered once the first instruction after the stack switch is executed. An unprivileged KVM guest user could use this flaw to crash the guest or, potentially, escalate their privileges in the guest.\r\n", {
+        "entities": [
+            [34, 38, "VERSION"],
+            [47, 55, "VERSION"],
+            [64, 72, "VERSION"],
+            [81, 89, "VERSION"],
+            [101, 109, "VERSION"],
+            [313, 364, "VULNERABILITY"],
+            [509, 524, "CAPABILITY"],
+            [542, 567, "CAPABILITY"],
+            [8, 11, "DRIVER"]
+        ]
+    }],
+    ["A flaw was found in the Linux 4.x kernel's implementation of 32-bit syscall interface for bridging. This allowed a privileged user to arbitrarily write to a limited range of kernel memory.", {
+        "entities": [
+            [30, 33, "VERSION"],
+            [134, 151, "CAPABILITY"]
+        ]
+    }]
+
+]
