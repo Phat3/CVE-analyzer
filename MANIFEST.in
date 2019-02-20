@@ -1,0 +1,2 @@
+include cve_analyzer/dataset/*
+recursive-include cve_analyzer/model/ *
